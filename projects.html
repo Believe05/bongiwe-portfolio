@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Bongiwe Believe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">BB<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>A showcase of my work in software development</p>
+            </div>
+        </section>
+
+        <section class="projects-full fade">
+            <div class="container">
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+
+                <div class="projects-grid-full">
+                    <div class="project-card-full" data-category="java">
+                        <div class="project-image">
+                            <img src="images/event-manager.jpg" alt="Event Manager" onerror="this.src='https://via.placeholder.com/400x250?text=Event+Manager'">
+                            <div class="project-links">
+                                <a href="https://github.com/Believe05/EventManager" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Event Manager</h3>
+                            <p>A comprehensive Java desktop application for managing events, attendees, and schedules with full CRUD operations and MySQL database integration.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>MySQL</span>
+                                <span>Swing</span>
+                                <span>JDBC</span>
+                            </div>
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Create, read, update, delete events</li>
+                                    <li>Attendee registration system</li>
+                                    <li>Schedule management</li>
+                                    <li>Database persistence</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-full" data-category="web">
+                        <div class="project-image">
+                            <img src="images/organic-glam.jpg" alt="Organic Glam" onerror="this.src='https://via.placeholder.com/400x250?text=Organic+Glam'">
+                            <div class="project-links">
+                                <a href="https://github.com/Believe05/LukhanyisosOrganicGlam" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://lukhanyisos-organic-glam.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Organic Glam</h3>
+                            <p>A fully functional e-commerce website for a natural skincare brand, featuring product listings, shopping cart, and contact functionality.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                            </div>
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Responsive design</li>
+                                    <li>Shopping cart with persistence</li>
+                                    <li>WhatsApp integration</li>
+                                    <li>Product filtering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-full" data-category="fullstack">
+                        <div class="project-image">
+                            <img src="images/shoplite.jpg" alt="ShopLite" onerror="this.src='https://via.placeholder.com/400x250?text=ShopLite'">
+                            <div class="project-links">
+                                <a href="https://github.com/Believe05/CodeAlpha_E-Commerce_Shoplite" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>ShopLite</h3>
+                            <p>A full-stack e-commerce platform with user authentication, product management, shopping cart, and order processing.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>JWT</span>
+                                <span>REST API</span>
+                            </div>
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>User registration & login (JWT)</li>
+                                    <li>Product catalog & search</li>
+                                    <li>Shopping cart with localStorage</li>
+                                    <li>Order management system</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-full" data-category="java">
+                        <div class="project-image">
+                            <img src="images/library-system.jpg" alt="Library System" onerror="this.src='https://via.placeholder.com/400x250?text=Library+System'">
+                            <div class="project-links">
+                                <a href="https://github.com/Believe05" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Library Management System</h3>
+                            <p>A Java-based library management system that handles book inventory, member registration, and borrowing records.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>OOP</span>
+                                <span>File I/O</span>
+                            </div>
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Book search & inventory</li>
+                                    <li>Member management</li>
+                                    <li>Borrow/return tracking</li>
+                                    <li>Due date calculation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bongiwe<span>Believe</span></h3>
+                <p>Building solutions, one line of code at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> believebongiwe@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +27 788 846 3181</p>
+                <p><i class="fas fa-map-marker-alt"></i> South Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bongiwe Believe Magagule | Built with <i class="fas fa-heart"></i> in South Africa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

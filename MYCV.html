@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bongiwe Believe Magagule - CV</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Poppins', 'Arial', sans-serif;
+            background: #f0f2f5;
+            padding: 40px 20px;
+            color: #1a1a2e;
+        }
+
+        .cv-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .cv-header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cv-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .cv-header .title {
+            font-size: 1.2rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .contact-bar span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+        }
+
+        .contact-bar i {
+            color: #38bdf8;
+            font-size: 1rem;
+            width: 16px;
+        }
+
+        .cv-body {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+        }
+
+        .cv-left {
+            background: #f8fafc;
+            padding: 30px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .cv-right {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #38bdf8;
+            display: inline-block;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #1e293b;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: #38bdf8;
+            color: white;
+            border-color: #38bdf8;
+        }
+
+        .achievement-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .achievement-item i {
+            color: #10b981;
+            font-size: 1rem;
+            margin-top: 2px;
+            width: 18px;
+        }
+
+        .achievement-item p {
+            color: #475569;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .interest-tag {
+            background: #e0f2fe;
+            color: #0284c7;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item h3 {
+            font-size: 1rem;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
+
+        .education-item .meta {
+            color: #38bdf8;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .education-item p {
+            color: #475569;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+        .project-item h3 {
+            font-size: 1rem;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
+
+        .project-item .tech-stack {
+            font-size: 0.75rem;
+            color: #38bdf8;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .project-item p {
+            color: #475569;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .project-item ul {
+            padding-left: 20px;
+            color: #475569;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .availability-box {
+            background: #e0f2fe;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+
+        .availability-box i {
+            color: #0284c7;
+            margin-right: 8px;
+        }
+
+        .availability-box p:first-child {
+            color: #0284c7;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .availability-box p:last-child {
+            font-size: 0.85rem;
+            color: #475569;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .cv-container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            
+            .cv-header {
+                background: #0f172a;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .skill-tag, .interest-tag, .availability-box {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .download-btn {
+                display: none;
+            }
+            
+            @page {
+                margin: 0.3in;
+                size: A4;
+            }
+            
+            @page :header {
+                display: none;
+            }
+            
+            @page :footer {
+                display: none;
+            }
+        }
+
+        .download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #38bdf8;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .download-btn:hover {
+            background: #0ea5e9;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .cv-body {
+                grid-template-columns: 1fr;
+            }
+            .cv-left {
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            .contact-bar {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .cv-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container" id="cv-content">
+        <div class="cv-header">
+            <h1>BONGIWE BELIEVE MAGAGULE</h1>
+            <div class="title">Computer Science Student | Aspiring Software Engineer</div>
+            <div class="contact-bar">
+                <span><i class="fas fa-phone-alt"></i> 078 846 3181</span>
+                <span><i class="fas fa-envelope"></i> believebongiwe@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> Witbank, South Africa</span>
+                <span><i class="fab fa-github"></i> github.com/Believe05</span>
+                <span><i class="fab fa-linkedin"></i> linkedin.com/in/bongiwe-believe</span>
+            </div>
+        </div>
+
+        <div class="cv-body">
+            <div class="cv-left">
+                <div class="section">
+                    <h3 class="section-title">Professional Summary</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: #475569; margin-top: 12px;">
+                        Motivated final-year Computer Science student at Tshwane University of Technology with a strong academic record (72.66% average) and hands-on experience in Java development, Linux system administration, and database design. Skilled in troubleshooting, application development, and collaborative teamwork. Passionate about leveraging technology to solve real-world problems and improve community living standards.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Technical Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> NetBeans/Eclipse</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fas fa-desktop"></i> VirtualBox</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> JSP/Servlets</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> JDBC</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Achievements</h3>
+                    <div class="achievement-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Consistently strong academic performance in technical modules (72.66% average)</p>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-trophy"></i>
+                        <p>Recognized for leadership and initiative in group projects (A-Team)</p>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-file-alt"></i>
+                        <p>Produced clear, structured technical documentation</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Certifications</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Cisco Python Essentials</span>
+                        <span class="skill-tag"><i class="fab fa-ibm"></i> IBM SkillsBuild</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java Programming</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Career Interests</h3>
+                    <div class="interests-list">
+                        <span class="interest-tag"><i class="fas fa-code"></i> Software Development</span>
+                        <span class="interest-tag"><i class="fas fa-headset"></i> IT Support</span>
+                        <span class="interest-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+                        <span class="interest-tag"><i class="fas fa-robot"></i> Workflow Automation</span>
+                        <span class="interest-tag"><i class="fas fa-users"></i> Community IT Solutions</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fas fa-language"></i> English (Fluent)</span>
+                        <span class="skill-tag"><i class="fas fa-language"></i> IsiZulu (Native)</span>
+                        <span class="skill-tag"><i class="fas fa-language"></i> IsiXhosa (Conversational)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-right">
+                <div class="section">
+                    <h3 class="section-title">Education</h3>
+                    <div class="education-item">
+                        <h3><i class="fas fa-graduation-cap"></i> Tshwane University of Technology (TUT)</h3>
+                        <div class="meta">Diploma in Computer Science | Expected Graduation: May 2027</div>
+                        <p><strong>Current Average:</strong> 72.66%</p>
+                        <p><strong>Key Modules:</strong> Object-Oriented Programming, Advanced OOP, Web Computing, Information Security, Database Principles, Principles of Programming</p>
+                    </div>
+                    <div class="education-item">
+                        <h3><i class="fas fa-school"></i> Phillip Ndimande Senior Secondary School</h3>
+                        <div class="meta">National Senior Certificate (Matric) | 2022</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Project Experience</h3>
+                    
+                    <div class="project-item">
+                        <h3>Intelligent Health Validation System (IHVS)</h3>
+                        <div class="tech-stack"><i class="fab fa-java"></i> Java | <i class="fab fa-java"></i> JSP | <i class="fas fa-database"></i> MySQL | GlassFish | JDBC | MVC Pattern</div>
+                        <p>Web-based healthcare platform developed in a 6-member team (A-Team).</p>
+                        <ul>
+                            <li>Implemented role-based authentication, medical aid eligibility validation, and appointment lifecycle management using Servlets and JDBC</li>
+                            <li>Integrated automated reminder engine and Patient Reliability Index (PRI) for attendance analytics</li>
+                            <li>Designed layered MVC architecture ensuring scalability, security, and maintainability</li>
+                            <li>Contributed to database schema design and event-driven workflow documentation</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Event Management System</h3>
+                        <div class="tech-stack"><i class="fab fa-java"></i> Java | GUI | File Handling | OOP</div>
+                        <ul>
+                            <li>Developed desktop application with add, edit, delete, and search functionality</li>
+                            <li>Applied OOP principles to design scalable features</li>
+                            <li>Led a team of 4, coordinating tasks and resolving technical issues</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Bookstore Database System</h3>
+                        <div class="tech-stack"><i class="fas fa-database"></i> SQL | MySQL | Database Design</div>
+                        <ul>
+                            <li>Designed and implemented normalized relational database</li>
+                            <li>Created SQL queries for inventory tracking and sales scenarios</li>
+                            <li>Ensured data integrity and efficient organization</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Organic Glam - E-Commerce Website</h3>
+                        <div class="tech-stack"><i class="fab fa-html5"></i> HTML5 | <i class="fab fa-css3-alt"></i> CSS3 | <i class="fab fa-js"></i> JavaScript | LocalStorage</div>
+                        <ul>
+                            <li>Built responsive e-commerce platform for natural skincare brand</li>
+                            <li>Implemented shopping cart with persistence and WhatsApp integration</li>
+                            <li>Deployed on Netlify with full functionality</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Ubuntu Virtual Machine Recovery & CMS Setup</h3>
+                        <div class="tech-stack"><i class="fab fa-linux"></i> Linux | VirtualBox | System Administration</div>
+                        <ul>
+                            <li>Diagnosed and repaired broken VM environments</li>
+                            <li>Restored system functionality and configured working environments</li>
+                            <li>Documented recovery processes for clarity and repeatability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Practical Exposure</h3>
+                    <ul style="padding-left: 20px; color: #475569; font-size: 0.85rem; line-height: 1.8;">
+                        <li><i class="fas fa-wrench"></i> Troubleshooting software, driver, and system issues</li>
+                        <li><i class="fas fa-tools"></i> Installing and configuring development tools and virtual environments</li>
+                        <li><i class="fas fa-bug"></i> Debugging Java applications and resolving runtime errors</li>
+                        <li><i class="fab fa-linux"></i> Working with Linux systems for configuration and recovery</li>
+                        <li><i class="fab fa-git-alt"></i> Version control with Git and GitHub</li>
+                        <li><i class="fas fa-users"></i> Collaborative development using Agile methodologies</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Availability</h3>
+                    <div class="availability-box">
+                        <p><i class="fas fa-check-circle"></i> Open to Work Integrated Learning (WIL) Opportunities</p>
+                        <p>Seeking internship, graduate programme, or junior software developer role through ICEP. Available immediately for opportunities in South Africa or remote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="download-btn" onclick="generatePDF()">
+        <i class="fas fa-file-pdf"></i> Download CV as PDF
+    </button>
+
+    <script>
+        function generatePDF() {
+            const btn = document.querySelector('.download-btn');
+            btn.style.display = 'none';
+            window.print();
+            setTimeout(() => {
+                btn.style.display = 'flex';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

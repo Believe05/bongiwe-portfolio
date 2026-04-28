@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Bongiwe Believe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">BB<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>Let's connect! I'm open to opportunities, collaborations, and conversations.</p>
+            </div>
+        </section>
+
+        <section class="contact-full fade">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3>WhatsApp</h3>
+                            <p>Fastest way to reach me</p>
+                            <a href="https://wa.me/27791234567" target="_blank" class="contact-link">
+                                <i class="fab fa-whatsapp"></i> +27 78 846 3181
+                            </a>
+                            <small>Click to chat directly</small>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>For professional inquiries</p>
+                            <a href="mailto:believebongiwe@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i> believebongiwe@gmail.com
+                            </a>
+                            <small>I reply within 24 hours</small>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>Connect professionally</p>
+                            <a href="https://linkedin.com/in/bongiwe-believe" target="_blank" class="contact-link">
+                                <i class="fab fa-linkedin"></i> bongiwe-believe
+                            </a>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>Check my code</p>
+                            <a href="https://github.com/Believe05" target="_blank" class="contact-link">
+                                <i class="fab fa-github"></i> Believe05
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h3>Send Me a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Your Phone (optional)">
+                            </div>
+                            <div class="form-group">
+                                <select id="subject">
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="internship">Internship</option>
+                                    <option value="project">Project Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <p id="form-status" class="form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruiters Section -->
+        <section class="recruiters fade">
+            <div class="container">
+                <div class="recruiter-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Open to Opportunities!</h3>
+                    <p>I'm actively seeking internships, graduate programmes, and junior software developer roles in South Africa or remote.</p>
+                    <div class="recruiter-badges">
+                        <span>Java Developer</span>
+                        <span>Software Engineer</span>
+                        <span>Backend Developer</span>
+                        <span>Full Stack Intern</span>
+                    </div>
+                    <a href="MYCV.pdf" download class="btn-cv-large">
+                        <i class="fas fa-download"></i> Download My CV
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/27788463181" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat with me!</span>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bongiwe<span>Believe</span></h3>
+                <p>Building solutions, one line of code at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> believebongiwe@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +27 788463181</p>
+                <p><i class="fas fa-map-marker-alt"></i> South Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bongiwe Believe Magagule | Built with <i class="fas fa-heart"></i> in South Africa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

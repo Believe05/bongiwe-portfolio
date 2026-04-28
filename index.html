@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bongiwe Believe | Software Engineer Portfolio</title>
+    <meta name="description" content="Bongiwe Believe Magagule - Computer Science student, Java developer, software engineer based in South Africa">
+    <meta name="keywords" content="Bongiwe Believe, Java Developer, Software Engineer, Portfolio, South Africa, TUT">
+    <meta name="author" content="Bongiwe Believe Magagule">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">BB<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h4>Hello, I'm</h4>
+                <h1 id="typing"></h1>
+                <p>Final-year Computer Science Student | Aspiring Software Engineer</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="MYCV.pdf" download class="btn btn-outline">Download CV <i class="fas fa-download"></i></a>
+                </div>
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>SQL</span>
+                    <span>Python</span>
+                    <span>Git</span>
+                    <span>Linux</span>
+                    <span>Web Dev</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Believe05" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/bongiwe-believe" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/27788463181" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:believebongiwe@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image"> 
+                <img src="/images/profile.jpeg" alt="Bongiwe Believe" onerror="this.src='https://via.placeholder.com/400x400?text=Profile'">
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats fade">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="count" data-target="3">0</span><span>+</span>
+                    </div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="count" data-target="4">0</span><span>+</span>
+                    </div>
+                    <p>Certifications</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="count" data-target="75">0</span><span>%</span>
+                    </div>
+                    <p>Academic Average</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="count" data-target="2">0</span><span>+</span>
+                    </div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects fade">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Event Manager</h3>
+                    <p>Java desktop application with full CRUD operations for managing events and attendees.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>Swing</span>
+                    </div>
+                    <a href="https://github.com/Believe05/EventManager" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Organic Glam</h3>
+                    <p>Full-stack e-commerce website for a natural skincare brand with cart functionality.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Believe05/LukhanyisosOrganicGlam" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>ShopLite</h3>
+                    <p>Full-stack e-commerce platform with authentication, cart, and order management.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                    </div>
+                    <a href="https://github.com/Believe05/CodeAlpha_E-Commerce_Shoplite" target="_blank" class="btn-small">View Code <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta fade">
+        <div class="container">
+            <h2>Open to Opportunities!</h2>
+            <p>I'm currently seeking internships, graduate programmes, and junior software developer roles in South Africa or remote.</p>
+            <a href="contact.html" class="btn btn-primary">Let's Connect <i class="fas fa-paper-plane"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bongiwe<span>Believe</span></h3>
+                <p>Building solutions, one line of code at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> believebongiwe@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +27 78 846 3181</p>
+                <p><i class="fas fa-map-marker-alt"></i> South Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bongiwe Believe Magagule | Built with <i class="fas fa-heart"></i> in South Africa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

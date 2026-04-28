@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Bongiwe Believe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">BB<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>Get to know the person behind the code</p>
+            </div>
+        </section>
+
+        <section class="about-content fade">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="/images/profile.jpeg" alt="Bongiwe Believe" onerror="this.src='https://via.placeholder.com/500x500?text=Photo'">
+                        <div class="cv-download-card">
+                            <h3><i class="fas fa-file-alt"></i> My CV</h3>
+                            <p>Download my professional resume to learn more about my qualifications and experience.</p>
+                            <a href="MYCV.pdf" download class="btn-cv">
+                                <i class="fas fa-download"></i> Download CV (PDF)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h2>Bongiwe Believe Magagule</h2>
+                        <p class="subtitle">Computer Science Student @ Tshwane University of Technology</p>
+                        
+                        <p>I'm a passionate third-year Computer Science student with a strong drive for solving real-world problems through technology. My journey in coding started with curiosity and has grown into a commitment to building meaningful software solutions.</p>
+                        
+                        <h3>My Journey</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2023</div>
+                                <div class="timeline-content">
+                                    <h4>Started Computer Science Diploma</h4>
+                                    <p>Enrolled at Tshwane University of Technology with a focus on software development.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Built First Major Projects</h4>
+                                    <p>Developed Java OOP systems and database-driven applications.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2025</div>
+                                <div class="timeline-content">
+                                    <h4>Certifications & Growth</h4>
+                                    <p>Earned Cisco Python Essentials and IBM SkillsBuild certifications.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2026</div>
+                                <div class="timeline-content">
+                                    <h4>Portfolio & Opportunities</h4>
+                                    <p>Building elite portfolio and preparing for internships and graduate programmes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Education</h3>
+                        <div class="education-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Diploma in Computer Science</h4>
+                                <p>Tshwane University of Technology | 2023 - Present</p>
+                                <p>Current Average: 75%</p>
+                            </div>
+                        </div>
+
+                        <h3>Certifications</h3>
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <i class="fab fa-python"></i>
+                                <span>Cisco Python Essentials</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fab fa-ibm"></i>
+                                <span>IBM SkillsBuild</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java Programming</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bongiwe<span>Believe</span></h3>
+                <p>Building solutions, one line of code at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> believebongiwe@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +27 78 846 3181</p>
+                <p><i class="fas fa-map-marker-alt"></i> South Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bongiwe Believe Magagule | Built with <i class="fas fa-heart"></i> in South Africa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

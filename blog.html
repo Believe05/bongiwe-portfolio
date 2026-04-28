@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Bongiwe Believe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">BB<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Blog</h1>
+                <p>Thoughts on software development, learning, and career growth</p>
+            </div>
+        </section>
+
+        <section class="blog-grid fade">
+            <div class="container">
+                <div class="blog-posts">
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="images/blog-java.jpg" alt="Java Development" onerror="this.src='https://via.placeholder.com/800x400?text=Java+Development'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> March 15, 2025</span>
+                                <span><i class="fas fa-tag"></i> Java, OOP</span>
+                            </div>
+                            <h2>How I Built My Java Projects: Lessons from a Student Developer</h2>
+                            <p>As a third-year Computer Science student, I've built several Java applications that taught me valuable lessons about object-oriented programming, database integration, and project architecture. Here's what I learned...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="images/blog-github.jpg" alt="GitHub Portfolio" onerror="this.src='https://via.placeholder.com/800x400?text=GitHub+Portfolio'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> February 28, 2025</span>
+                                <span><i class="fas fa-tag"></i> GitHub, Portfolio</span>
+                            </div>
+                            <h2>Why Students Need GitHub: How Portfolios Help You Stand Out</h2>
+                            <p>In today's competitive job market, having a GitHub portfolio isn't optional—it's essential. I share how building my portfolio helped me get noticed and the best practices I've learned along the way...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="images/blog-fullstack.jpg" alt="Full Stack Development" onerror="this.src='https://via.placeholder.com/800x400?text=Full+Stack'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> January 20, 2025</span>
+                                <span><i class="fas fa-tag"></i> Full Stack, MERN</span>
+                            </div>
+                            <h2>From Java to Full Stack: My Journey Learning Web Development</h2>
+                            <p>Transitioning from desktop applications to web development was challenging but rewarding. Here's how I approached learning Node.js, Express, and MongoDB while still mastering Java...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-image">
+                            <img src="images/blog-interview.jpg" alt="Job Interview Tips" onerror="this.src='https://via.placeholder.com/800x400?text=Interview+Tips'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> December 10, 2024</span>
+                                <span><i class="fas fa-tag"></i> Career, Interviews</span>
+                            </div>
+                            <h2>5 Tips for CS Students Applying for Internships in South Africa</h2>
+                            <p>Applying for internships as a student can be daunting. I share my experience, what recruiters look for, and how to prepare for technical interviews...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">Java Development (3)</a></li>
+                            <li><a href="#">Web Development (2)</a></li>
+                            <li><a href="#">Career Advice (2)</a></li>
+                            <li><a href="#">Study Tips (1)</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3>Newsletter</h3>
+                        <p>Get updates on my latest posts and projects</p>
+                        <input type="email" placeholder="Your Email">
+                        <button>Subscribe</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bongiwe<span>Believe</span></h3>
+                <p>Building solutions, one line of code at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> believebongiwe@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +27 788463181</p>
+                <p><i class="fas fa-map-marker-alt"></i> South Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bongiwe Believe Magagule | Built with <i class="fas fa-heart"></i> in South Africa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
